@@ -133,7 +133,7 @@ def analyze_data(data):
     transformed_df['Средний балл'] = transformed_df.iloc[:, 1:].apply(mean_ignore_zeros, axis=1)
 
     '''
-    Код для обучения модели и ее сохранения
+    #Код для обучения модели на выданном наборе данных. Сохраняет файл .pkl содержащий изученную информацию
     df = df_cleaned.drop(columns='UUID студента')
 
     # Определение целевой переменной и признаков
@@ -199,7 +199,7 @@ def analyze_data(data):
         print(f"Средняя квадратичная ошибка: {mse}")
     print(f"Коэффициент детерминации R²: {r2 * 100:.2f}%")
     '''
-
+    #Загрузка обученной модели
     best_model = joblib.load('best_model.pkl')
 
     # Применение к новым данным
