@@ -25,7 +25,7 @@ import os
 
 
 
-API_TOKEN = '7048524483:AAHmfqEbZ05x2555Vn8woMwtfgc7Rxvozls'
+API_TOKEN = 'ВАШ ТОКЕН'
 
 # Создаем объекты кнопок
 
