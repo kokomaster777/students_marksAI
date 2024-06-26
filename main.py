@@ -133,6 +133,7 @@ def analyze_data(data):
     transformed_df['Средний балл'] = transformed_df.iloc[:, 1:].apply(mean_ignore_zeros, axis=1)
 
     '''
+    Код для обучения модели и ее сохранения
     df = df_cleaned.drop(columns='UUID студента')
 
     # Определение целевой переменной и признаков
